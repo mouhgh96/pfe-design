@@ -21,3 +21,8 @@
 .message-content {
     filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.75));
 }
+
+.image-cover {
+    height: 70vh;
+    margin-bottom: -2rem;
+}
