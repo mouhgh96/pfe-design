@@ -1,20 +1,22 @@
 {
-    "name": "interface",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "postcss -w css/tailwind.css -o public/css/tailwind.css"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "autoprefixer": "^9.8.6",
-        "postcss-cli": "^7.1.1",
-        "tailwindcss": "^1.7.6"
-    },
-    "devDependencies": {
-        "@tailwindcss/custom-forms": "^0.2.1"
-    }
+  "name": "interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss -w css/tailwind.css -o public/css/tailwind.css",
+    "build": "NODE_ENV=production postcss css/tailwind.css -o public/css/tailwind.css",
+    "deploy": "yarn build && firebase deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.7.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  }
 }

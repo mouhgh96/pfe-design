@@ -1,16 +1,17 @@
 module.exports = {
-    purge: [],
+  purge: ["./public/**/*.html", "./public/**/*.vue", "./public/**/*.jsx"],
 
-    theme: {
-        extend: {
-            fontFamily: {
-                'source-sans-pro': ['Source Sans Pro'],
-                'mitr': ['Mitr'],
-                'roboto-slab': ['Roboto Slab'],
-            },
-        },
+  theme: {
+    extend: {
+      fontFamily: {
+        "source-sans-pro": ["Source Sans Pro"],
+        mitr: ["Mitr"],
+        "roboto-slab": ["Roboto Slab"],
+      },
     },
-    plugins: [require("@tailwindcss/custom-forms")],
+  },
+  plugins: [require("@tailwindcss/custom-forms")],
 
-    variants: {},
-}
+  variants: {},
+};
+

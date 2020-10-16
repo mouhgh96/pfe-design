@@ -15,8 +15,13 @@
     <div class="bg-white shadow-md">
         <div class="container mx-auto p-2">
             <div class="flex items-center">
-                <div class="border-4 border-blue-400 rounded-full overflow-hidden h-32 w-32 ">
+                <div class="border-4 border-blue-400 rounded-full  h-32 w-32 flex">
                     <img class="object-center rounded-full w-full" alt="A" src="https://randomuser.me/api/portraits/women/75.jpg">
+
+                    <form action="" method="post">
+                        <input type="file" name="profilePicture" id="profilePicture" class="hidden" accept="image/*">
+                        <label for="profilePicture" id="addPhotoLabel" class="cursor-pointer"><span class="iconify" data-icon="bi:camera-fill" data-inline="false"></span></label>
+                    </form>
                 </div>
                 <div class=" ml-4">
                     <h1 class="text-2xl font-bold tracking-black text-gray-800">randomuser</h1>
