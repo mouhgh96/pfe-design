@@ -1,0 +1,38 @@
+#signal_container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+#signal_container .input_control {
+  margin-bottom: 1rem;
+}
+#signal_container .signal_modal {
+  background-color: #fff;
+  max-width: 90%;
+  min-width: 300px;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.signal_modal textarea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  resize: both;
+  max-width: 100%;
+}
+
+.signal_modal button {
+  border-radius: 5px;
+}
+.signal_modal .signal_modal_btn_group {
+  display: flex;
+  justify-content: space-between;
+}
+button:focus {
+  outline: 0;
+}
